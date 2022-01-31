@@ -18,8 +18,11 @@ final class NewGameRouterImp {
 
 extension NewGameRouterImp: NewGameRouter {
     func showRoundScreen() {
-        let controler = RoundAssembly().assembly()
-        controler.modalPresentationStyle = .fullScreen
-        rootController?.present(controler, animated: false)
+        rootController?.dismiss(animated: true) { [weak self] in
+            let controler = RoundAssembly().assembly()
+            UIApplication.shared.windows.first?.rootViewController = controler
+            controler.modalPresentationStyle = .fullScreen
+            self?.rootController?.present(controler, animated: true)
+        }
     }
 }

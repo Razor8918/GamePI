@@ -89,7 +89,9 @@ private extension HumanGuessViewController {
     }
     
     func configureUI() {
-        roundLabel.text = "Round №"
+        if let roundText = presenter?.getRoundText() {
+            roundLabel.text = roundText
+        }
         roundLabel.textAlignment = .center
         
         youGuessesLabel.text = "You Guesses"

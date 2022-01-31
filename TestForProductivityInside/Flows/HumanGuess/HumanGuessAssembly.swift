@@ -9,7 +9,7 @@ final class HumanGuessAssembly {
     func assembly(with context: Context) -> HumanGuessViewController {
         let controller = HumanGuessViewController()
         let router = HumanGuessRouterImp()
-        let presenter = HumanGuessPresenterImp(value: context.value, router: router)
+        let presenter = HumanGuessPresenterImp(value: context.value, router: router, roundNumber: context.roundNumber)
         
         controller.presenter = presenter
         presenter.view = controller
@@ -22,6 +22,7 @@ final class HumanGuessAssembly {
 extension HumanGuessAssembly {
     struct Context {
         let value: Int
+        let roundNumber: Int
     }
 }
 

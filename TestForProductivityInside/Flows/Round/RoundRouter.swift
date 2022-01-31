@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol RoundRouter {
-    func showComputerGuessScreen(value: Int)
+    func showComputerGuessScreen(value: Int, roundNumber: Int)
 }
 
 final class RoundRouterImp {
@@ -17,9 +17,12 @@ final class RoundRouterImp {
 }
 
 extension RoundRouterImp: RoundRouter {
-    func showComputerGuessScreen(value: Int) {
-        let controler = ComputerGuessAssembly().assembly(with: .init(value: value))
-        controler.modalPresentationStyle = .fullScreen
-        rootController?.present(controler, animated: false)
+    func showComputerGuessScreen(value: Int, roundNumber: Int) {
+        rootController?.dismiss(animated: true) { [weak self] in
+            let controler = ComputerGuessAssembly().assembly(with: .init(value: value, roundNumber: 1))
+            UIApplication.shared.windows.first?.rootViewController = controler
+            controler.modalPresentationStyle = .fullScreen
+            self?.rootController?.present(controler, animated: true)
+        }
     }
 }

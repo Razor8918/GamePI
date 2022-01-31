@@ -28,6 +28,6 @@ final class RoundPresenterImp {
 
 extension RoundPresenterImp: RoundPresenter {
     func showComputerGuessScreen(value: Int) {
-        router.showComputerGuessScreen(value: value)
+        router.showComputerGuessScreen(value: value, roundNumber: 1)
     }
 }

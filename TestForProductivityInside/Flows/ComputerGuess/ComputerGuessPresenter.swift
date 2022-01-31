@@ -16,6 +16,7 @@ enum ActionType {
 protocol ComputerGuessPresenter {
     func getGuessedValue() -> Int
     func tappedActionButton(actionType: ActionType)
+    func getRoundText() -> String
 }
 
 final class ComputerGuessPresenterImp {
@@ -27,11 +28,14 @@ final class ComputerGuessPresenterImp {
     
     private let router: ComputerGuessRouter
     
+    private let roundNumber: Int
+    
     // MARK: - Initialization
     
-    init(value: Int, router: ComputerGuessRouter) {
+    init(value: Int, router: ComputerGuessRouter, roundNumber: Int) {
         self.value = value
         self.router = router
+        self.roundNumber = roundNumber
     }
 }
 
@@ -43,10 +47,14 @@ extension ComputerGuessPresenterImp: ComputerGuessPresenter {
     func tappedActionButton(actionType: ActionType) {
         switch actionType {
         case .less, .greater:
-            router.showHumanGuessScreen(value: value)
+            let nextRoundNumber = roundNumber + 1
+            router.showHumanGuessScreen(value: value, roundNumber: nextRoundNumber)
         case .equal:
             router.showFailureScreen()
         }
     }
     
+    func getRoundText() -> String {
+        return "Round № " + roundNumber.description
+    }
 }

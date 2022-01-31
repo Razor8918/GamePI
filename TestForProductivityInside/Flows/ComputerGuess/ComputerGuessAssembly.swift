@@ -9,7 +9,7 @@ final class ComputerGuessAssembly {
     func assembly(with context: Context) -> ComputerGuessViewController {
         let controller = ComputerGuessViewController()
         let router = ComputerGuessRouterImp()
-        let presenter = ComputerGuessPresenterImp(value: context.value, router: router)
+        let presenter = ComputerGuessPresenterImp(value: context.value, router: router, roundNumber: context.roundNumber)
         
         controller.presenter = presenter
         presenter.view = controller
@@ -22,5 +22,6 @@ final class ComputerGuessAssembly {
 extension ComputerGuessAssembly {
     struct Context {
         let value: Int
+        let roundNumber: Int
     }
 }

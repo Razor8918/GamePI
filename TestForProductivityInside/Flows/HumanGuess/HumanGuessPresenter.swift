@@ -11,6 +11,7 @@ protocol HumanGuessPresenter {
     func getValue() -> Int
     func setValue(guessValue: Int)
     func touchBottomButton()
+    func getRoundText() -> String
 }
 
 final class HumanGuessPresenterImp {
@@ -21,14 +22,16 @@ final class HumanGuessPresenterImp {
     /// Число, которое нужно угадать
     private let value: Int
     private let router: HumanGuessRouter
+    private let roundNumber: Int
     
     private var guessValue: Int?
     
     // MARK: - Initialization
     
-    init(value: Int, router: HumanGuessRouter) {
+    init(value: Int, router: HumanGuessRouter, roundNumber: Int) {
         self.value = value
         self.router = router
+        self.roundNumber = roundNumber
     }
 }
 
@@ -47,7 +50,12 @@ extension HumanGuessPresenterImp: HumanGuessPresenter {
         if value == guessValue {
             router.showSuccessScreen()
         } else {
-            router.showComputerGuessScreen(value: value)
+            let nextRoundNumber = roundNumber + 1
+            router.showComputerGuessScreen(value: value, roundNumber: nextRoundNumber)
         }
+    }
+    
+    func getRoundText() -> String {
+        return "Round № " + roundNumber.description
     }
 }

@@ -67,7 +67,7 @@ private extension RoundViewController {
     }
     
     func configureUI() {
-        roundLabel.text = "Round №"
+        roundLabel.text = "Round № 0"
         roundLabel.textAlignment = .center
         
         enterNumberButton.setTitle("Enter the Number", for: .normal)

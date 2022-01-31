@@ -18,8 +18,11 @@ final class ResultRouterImp {
 
 extension ResultRouterImp: ResultRouter {
     func showRoundScreen() {
-        let controler = RoundAssembly().assembly()
-        controler.modalPresentationStyle = .fullScreen
-        rootController?.present(controler, animated: false)
+        rootController?.dismiss(animated: false) { [weak self] in
+            let controler = RoundAssembly().assembly()
+            UIApplication.shared.windows.first?.rootViewController = controler
+            controler.modalPresentationStyle = .fullScreen
+            self?.rootController?.present(controler, animated: false)
+        }
     }
 }

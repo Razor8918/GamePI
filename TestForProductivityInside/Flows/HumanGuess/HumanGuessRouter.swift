@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol HumanGuessRouter {
-    func showComputerGuessScreen(value: Int)
+    func showComputerGuessScreen(value: Int, roundNumber: Int)
     func showSuccessScreen()
 }
 
@@ -18,15 +18,21 @@ final class HumanGuessRouterImp {
 }
 
 extension HumanGuessRouterImp: HumanGuessRouter {
-    func showComputerGuessScreen(value: Int) {
-        let controler = ComputerGuessAssembly().assembly(with: .init(value: value))
-        controler.modalPresentationStyle = .fullScreen
-        rootController?.present(controler, animated: false)
+    func showComputerGuessScreen(value: Int, roundNumber: Int) {
+        rootController?.dismiss(animated: false) { [weak self] in
+            let controler = ComputerGuessAssembly().assembly(with: .init(value: value, roundNumber: roundNumber))
+            UIApplication.shared.windows.first?.rootViewController = controler
+            controler.modalPresentationStyle = .fullScreen
+            self?.rootController?.present(controler, animated: false)
+        }
     }
     
     func showSuccessScreen() {
-        let controler = ResultAssembly().assembly(with: .init(hasGameWon: true))
-        controler.modalPresentationStyle = .fullScreen
-        rootController?.present(controler, animated: false)
+        rootController?.dismiss(animated: false) { [weak self] in
+            let controler = ResultAssembly().assembly(with: .init(hasGameWon: true))
+            UIApplication.shared.windows.first?.rootViewController = controler
+            controler.modalPresentationStyle = .fullScreen
+            self?.rootController?.present(controler, animated: false)
+        }
     }
 }

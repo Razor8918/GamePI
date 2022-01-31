@@ -80,7 +80,9 @@ private extension ComputerGuessViewController {
     }
     
     func configureUI() {
-        roundLabel.text = "Round №"
+        if let roundText = presenter?.getRoundText() {
+            roundLabel.text = roundText
+        }
         roundLabel.textAlignment = .center
         
         computerGuessesLabel.text = "computer guesses"
