@@ -9,21 +9,60 @@
 /* Begin PBXBuildFile section */
 		6364B04827A444FF00F83F4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B04727A444FF00F83F4E /* AppDelegate.swift */; };
 		6364B04A27A444FF00F83F4E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B04927A444FF00F83F4E /* SceneDelegate.swift */; };
-		6364B04C27A444FF00F83F4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B04B27A444FF00F83F4E /* ViewController.swift */; };
-		6364B04F27A444FF00F83F4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6364B04D27A444FF00F83F4E /* Main.storyboard */; };
+		6364B04C27A444FF00F83F4E /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B04B27A444FF00F83F4E /* NewGameViewController.swift */; };
 		6364B05127A4450000F83F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6364B05027A4450000F83F4E /* Assets.xcassets */; };
 		6364B05427A4450000F83F4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6364B05227A4450000F83F4E /* LaunchScreen.storyboard */; };
+		6364B05C27A445FE00F83F4E /* NewGameAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B05B27A445FE00F83F4E /* NewGameAssembly.swift */; };
+		6364B06527A4483C00F83F4E /* NewGamePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6364B06427A4483C00F83F4E /* NewGamePresenter.swift */; };
+		6364B06927A44DB800F83F4E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6364B06827A44DB800F83F4E /* SnapKit */; };
+		63A7C24D27A452680072B5F5 /* RoundAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C24C27A452680072B5F5 /* RoundAssembly.swift */; };
+		63A7C24F27A452750072B5F5 /* RoundPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C24E27A452750072B5F5 /* RoundPresenter.swift */; };
+		63A7C25127A452800072B5F5 /* RoundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25027A452800072B5F5 /* RoundViewController.swift */; };
+		63A7C25327A455DE0072B5F5 /* NewGameRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25227A455DE0072B5F5 /* NewGameRouter.swift */; };
+		63A7C25627A45D5C0072B5F5 /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25527A45D5C0072B5F5 /* UITextField+Extensions.swift */; };
+		63A7C25927A460570072B5F5 /* ComputerGuessAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25827A460570072B5F5 /* ComputerGuessAssembly.swift */; };
+		63A7C25B27A460670072B5F5 /* ComputerGuessPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25A27A460670072B5F5 /* ComputerGuessPresenter.swift */; };
+		63A7C25D27A460700072B5F5 /* ComputerGuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25C27A460700072B5F5 /* ComputerGuessViewController.swift */; };
+		63A7C25F27A4675C0072B5F5 /* RoundRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A7C25E27A4675C0072B5F5 /* RoundRouter.swift */; };
+		63CCB2CC27A560BA00C473F4 /* ResultAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2CB27A560BA00C473F4 /* ResultAssembly.swift */; };
+		63CCB2CE27A560CD00C473F4 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2CD27A560CD00C473F4 /* ResultPresenter.swift */; };
+		63CCB2D027A560D800C473F4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2CF27A560D800C473F4 /* ResultViewController.swift */; };
+		63CCB2D327A56C3800C473F4 /* HumanGuessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2D227A56C3800C473F4 /* HumanGuessViewController.swift */; };
+		63CCB2D527A56C4600C473F4 /* HumanGuessAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2D427A56C4600C473F4 /* HumanGuessAssembly.swift */; };
+		63CCB2D727A56C5700C473F4 /* HumanGuessPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2D627A56C5700C473F4 /* HumanGuessPresenter.swift */; };
+		63CCB2D927A5785300C473F4 /* HumanGuessRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2D827A5785300C473F4 /* HumanGuessRouter.swift */; };
+		63CCB2DB27A57FAA00C473F4 /* ComputerGuessRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2DA27A57FAA00C473F4 /* ComputerGuessRouter.swift */; };
+		63CCB2DD27A58B3300C473F4 /* RelultRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CCB2DC27A58B3300C473F4 /* RelultRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6364B04427A444FF00F83F4E /* TestForProductivityInside.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestForProductivityInside.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6364B04727A444FF00F83F4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6364B04927A444FF00F83F4E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6364B04B27A444FF00F83F4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6364B04E27A444FF00F83F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6364B04B27A444FF00F83F4E /* NewGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameViewController.swift; sourceTree = "<group>"; };
 		6364B05027A4450000F83F4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6364B05327A4450000F83F4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6364B05527A4450000F83F4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6364B05B27A445FE00F83F4E /* NewGameAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameAssembly.swift; sourceTree = "<group>"; };
+		6364B06427A4483C00F83F4E /* NewGamePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGamePresenter.swift; sourceTree = "<group>"; };
+		63A7C24C27A452680072B5F5 /* RoundAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundAssembly.swift; sourceTree = "<group>"; };
+		63A7C24E27A452750072B5F5 /* RoundPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundPresenter.swift; sourceTree = "<group>"; };
+		63A7C25027A452800072B5F5 /* RoundViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundViewController.swift; sourceTree = "<group>"; };
+		63A7C25227A455DE0072B5F5 /* NewGameRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameRouter.swift; sourceTree = "<group>"; };
+		63A7C25527A45D5C0072B5F5 /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		63A7C25827A460570072B5F5 /* ComputerGuessAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessAssembly.swift; sourceTree = "<group>"; };
+		63A7C25A27A460670072B5F5 /* ComputerGuessPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessPresenter.swift; sourceTree = "<group>"; };
+		63A7C25C27A460700072B5F5 /* ComputerGuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessViewController.swift; sourceTree = "<group>"; };
+		63A7C25E27A4675C0072B5F5 /* RoundRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundRouter.swift; sourceTree = "<group>"; };
+		63CCB2CB27A560BA00C473F4 /* ResultAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultAssembly.swift; sourceTree = "<group>"; };
+		63CCB2CD27A560CD00C473F4 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
+		63CCB2CF27A560D800C473F4 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		63CCB2D227A56C3800C473F4 /* HumanGuessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanGuessViewController.swift; sourceTree = "<group>"; };
+		63CCB2D427A56C4600C473F4 /* HumanGuessAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanGuessAssembly.swift; sourceTree = "<group>"; };
+		63CCB2D627A56C5700C473F4 /* HumanGuessPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanGuessPresenter.swift; sourceTree = "<group>"; };
+		63CCB2D827A5785300C473F4 /* HumanGuessRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanGuessRouter.swift; sourceTree = "<group>"; };
+		63CCB2DA27A57FAA00C473F4 /* ComputerGuessRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComputerGuessRouter.swift; sourceTree = "<group>"; };
+		63CCB2DC27A58B3300C473F4 /* RelultRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelultRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6364B06927A44DB800F83F4E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +98,104 @@
 			children = (
 				6364B04727A444FF00F83F4E /* AppDelegate.swift */,
 				6364B04927A444FF00F83F4E /* SceneDelegate.swift */,
-				6364B04B27A444FF00F83F4E /* ViewController.swift */,
-				6364B04D27A444FF00F83F4E /* Main.storyboard */,
-				6364B05027A4450000F83F4E /* Assets.xcassets */,
-				6364B05227A4450000F83F4E /* LaunchScreen.storyboard */,
-				6364B05527A4450000F83F4E /* Info.plist */,
+				6364B05F27A4464800F83F4E /* Flows */,
+				63A7C25427A45D2A0072B5F5 /* Extensions */,
+				6364B05E27A4463900F83F4E /* SupportingFiles */,
+				6364B06027A4467E00F83F4E /* StoryBoards */,
 			);
 			path = TestForProductivityInside;
+			sourceTree = "<group>";
+		};
+		6364B05D27A4462600F83F4E /* NewGame */ = {
+			isa = PBXGroup;
+			children = (
+				6364B05B27A445FE00F83F4E /* NewGameAssembly.swift */,
+				6364B06427A4483C00F83F4E /* NewGamePresenter.swift */,
+				63A7C25227A455DE0072B5F5 /* NewGameRouter.swift */,
+				6364B04B27A444FF00F83F4E /* NewGameViewController.swift */,
+			);
+			path = NewGame;
+			sourceTree = "<group>";
+		};
+		6364B05E27A4463900F83F4E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6364B05527A4450000F83F4E /* Info.plist */,
+				6364B05027A4450000F83F4E /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		6364B05F27A4464800F83F4E /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				63CCB2D127A56C0400C473F4 /* HumanGuess */,
+				6364B05D27A4462600F83F4E /* NewGame */,
+				63A7C24B27A452540072B5F5 /* Round */,
+				63A7C25727A4603F0072B5F5 /* ComputerGuess */,
+				63CCB2CA27A560A600C473F4 /* Result */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		6364B06027A4467E00F83F4E /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				6364B05227A4450000F83F4E /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		63A7C24B27A452540072B5F5 /* Round */ = {
+			isa = PBXGroup;
+			children = (
+				63A7C24C27A452680072B5F5 /* RoundAssembly.swift */,
+				63A7C24E27A452750072B5F5 /* RoundPresenter.swift */,
+				63A7C25E27A4675C0072B5F5 /* RoundRouter.swift */,
+				63A7C25027A452800072B5F5 /* RoundViewController.swift */,
+			);
+			path = Round;
+			sourceTree = "<group>";
+		};
+		63A7C25427A45D2A0072B5F5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				63A7C25527A45D5C0072B5F5 /* UITextField+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		63A7C25727A4603F0072B5F5 /* ComputerGuess */ = {
+			isa = PBXGroup;
+			children = (
+				63A7C25827A460570072B5F5 /* ComputerGuessAssembly.swift */,
+				63A7C25A27A460670072B5F5 /* ComputerGuessPresenter.swift */,
+				63CCB2DA27A57FAA00C473F4 /* ComputerGuessRouter.swift */,
+				63A7C25C27A460700072B5F5 /* ComputerGuessViewController.swift */,
+			);
+			path = ComputerGuess;
+			sourceTree = "<group>";
+		};
+		63CCB2CA27A560A600C473F4 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				63CCB2CB27A560BA00C473F4 /* ResultAssembly.swift */,
+				63CCB2CD27A560CD00C473F4 /* ResultPresenter.swift */,
+				63CCB2DC27A58B3300C473F4 /* RelultRouter.swift */,
+				63CCB2CF27A560D800C473F4 /* ResultViewController.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		63CCB2D127A56C0400C473F4 /* HumanGuess */ = {
+			isa = PBXGroup;
+			children = (
+				63CCB2D427A56C4600C473F4 /* HumanGuessAssembly.swift */,
+				63CCB2D627A56C5700C473F4 /* HumanGuessPresenter.swift */,
+				63CCB2D827A5785300C473F4 /* HumanGuessRouter.swift */,
+				63CCB2D227A56C3800C473F4 /* HumanGuessViewController.swift */,
+			);
+			path = HumanGuess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +214,9 @@
 			dependencies = (
 			);
 			name = TestForProductivityInside;
+			packageProductDependencies = (
+				6364B06827A44DB800F83F4E /* SnapKit */,
+			);
 			productName = TestForProductivityInside;
 			productReference = 6364B04427A444FF00F83F4E /* TestForProductivityInside.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +245,9 @@
 				Base,
 			);
 			mainGroup = 6364B03B27A444FF00F83F4E;
+			packageReferences = (
+				6364B06727A44DB800F83F4E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 6364B04527A444FF00F83F4E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +264,6 @@
 			files = (
 				6364B05427A4450000F83F4E /* LaunchScreen.storyboard in Resources */,
 				6364B05127A4450000F83F4E /* Assets.xcassets in Resources */,
-				6364B04F27A444FF00F83F4E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +274,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6364B04C27A444FF00F83F4E /* ViewController.swift in Sources */,
+				63A7C24D27A452680072B5F5 /* RoundAssembly.swift in Sources */,
+				6364B05C27A445FE00F83F4E /* NewGameAssembly.swift in Sources */,
+				6364B04C27A444FF00F83F4E /* NewGameViewController.swift in Sources */,
+				63A7C25627A45D5C0072B5F5 /* UITextField+Extensions.swift in Sources */,
+				63CCB2D327A56C3800C473F4 /* HumanGuessViewController.swift in Sources */,
+				63A7C25127A452800072B5F5 /* RoundViewController.swift in Sources */,
+				63CCB2CC27A560BA00C473F4 /* ResultAssembly.swift in Sources */,
+				63CCB2D927A5785300C473F4 /* HumanGuessRouter.swift in Sources */,
+				63A7C25F27A4675C0072B5F5 /* RoundRouter.swift in Sources */,
+				63CCB2D727A56C5700C473F4 /* HumanGuessPresenter.swift in Sources */,
+				63CCB2CE27A560CD00C473F4 /* ResultPresenter.swift in Sources */,
+				63CCB2D027A560D800C473F4 /* ResultViewController.swift in Sources */,
 				6364B04827A444FF00F83F4E /* AppDelegate.swift in Sources */,
+				63A7C25D27A460700072B5F5 /* ComputerGuessViewController.swift in Sources */,
 				6364B04A27A444FF00F83F4E /* SceneDelegate.swift in Sources */,
+				63A7C25927A460570072B5F5 /* ComputerGuessAssembly.swift in Sources */,
+				6364B06527A4483C00F83F4E /* NewGamePresenter.swift in Sources */,
+				63CCB2D527A56C4600C473F4 /* HumanGuessAssembly.swift in Sources */,
+				63A7C25B27A460670072B5F5 /* ComputerGuessPresenter.swift in Sources */,
+				63A7C25327A455DE0072B5F5 /* NewGameRouter.swift in Sources */,
+				63CCB2DD27A58B3300C473F4 /* RelultRouter.swift in Sources */,
+				63A7C24F27A452750072B5F5 /* RoundPresenter.swift in Sources */,
+				63CCB2DB27A57FAA00C473F4 /* ComputerGuessRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		6364B04D27A444FF00F83F4E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6364B04E27A444FF00F83F4E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6364B05227A4450000F83F4E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,10 +439,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C27T948F5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestForProductivityInside/Info.plist;
+				INFOPLIST_FILE = TestForProductivityInside/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -319,10 +466,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5C27T948F5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TestForProductivityInside/Info.plist;
+				INFOPLIST_FILE = TestForProductivityInside/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -360,6 +506,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6364B06727A44DB800F83F4E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6364B06827A44DB800F83F4E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6364B06727A44DB800F83F4E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6364B03C27A444FF00F83F4E /* Project object */;
 }
